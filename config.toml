@@ -1,0 +1,8 @@
+[telegram]
+token = 'tg_bot_token'
+
+[postgres]
+link = 'postgres_database_link'
+
+[chromedriver]
+path='path_to_chrome_driver'
