@@ -13,6 +13,7 @@ validators = "*"
 selenium = "*"
 requests = "*"
 emoji = "*"
+redis = "*"
 
 [dev-packages]
 

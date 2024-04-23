@@ -15,10 +15,16 @@ class ChromeDriverConfig(BaseModel):
     path: str
 
 
+class RedisConfig(BaseModel):
+    host: str
+    port: int
+
+
 class Config(BaseModel):
     postgres: PostgresConfig
     telegram: TelegramConfig
     chromedriver: ChromeDriverConfig
+    redis: RedisConfig
 
 
 config_name = 'config.toml'
