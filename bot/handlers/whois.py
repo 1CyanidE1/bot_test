@@ -18,7 +18,7 @@ router = Router(name='whois')
 async def language_change(query: CallbackQuery, state=States.LANG) -> Any:
     GetInformation.unpack(query.data)
     data = await state.get_data()
-    whois = get_whois(data['LINK'])
+    whois = await get_whois(data['LINK'])
     if data['LANG'] == 'ru':
         content = as_list(
             Text('IP: ', whois['query']),
